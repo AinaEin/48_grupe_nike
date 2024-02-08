@@ -12,28 +12,72 @@ body {
     gap: 40px;
     padding-top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #111;
 }
 
-
-.container {
+.container-first {
+    width: 100%;
+    height: 100px;
     display: flex;
+    justify-content: center;
+    padding: 24px 184px 24px 184px;
     align-items: center;
-    justify-content: space-between;
-}
-.logo {
-    height: 40px;
-    width: 100px;
-    object-fit: contain;
-    object-position: left center;
+    gap: 149px;
 }
 
-.main-nav {
+.container-first .main-nav {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-.main-nav > .nav-link {
+    gap: 40px;
+    font-family: sans-serif;
     font-size: 20px;
+}
+
+.main-nav .nav-link {
+    color: #111;
     text-decoration: none;
-    color: #302f30;
+}
+
+.container-first .socials {
+    display: flex;
+    gap: 10px;
+}
+
+.container-second {
+    display: flex;
+    justify-content: center;
+}
+.colum-left {
+    width: 40%;
+
+}
+.colum-right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.colum-left .main-title {
+
+}
+
+.colum-left .description {
+    
+}
+
+.colum-left .btn {
+    display: flex;
+    display: inline-block;
+    padding: 1em 2em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    background-color: #fff;
+    border: 2px solid #111111;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 50px;
 }
