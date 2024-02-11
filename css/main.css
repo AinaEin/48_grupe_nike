@@ -44,24 +44,57 @@ body {
 
 .container-second {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 1000px;
+    margin-left: calc((100% - 1000px) / 2);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
 }
 .colum-left {
     width: 40%;
-
+    padding-bottom: 80px;
 }
+.colum-left .arrow-one {
+    color: grey;
+    position: absolute;
+    top: 44%; left: -15%;
+}
+
+.colum-right .arrow-one:hover {
+    color: #111;
+}
+
 .colum-right {
     width: 60%;
     display: flex;
     justify-content: center;
 }
 
-.colum-left .main-title {
+.colum-right .arrow-two {
+    color: grey;
+    position: absolute;
+    top: 44%; right: -17%;
+}
 
+.colum-right .arrow-two:hover {
+    color: #111;
+}
+
+.colum-left .main-title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 20px;
 }
 
 .colum-left .description {
-    
+    font-size: 56px;
+    font-stretch: expanded;
+    line-height: 64px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .colum-left .btn {
@@ -80,4 +113,31 @@ body {
     cursor: pointer;
     user-select: none;
     margin-top: 50px;
+}
+
+.colum-left .btn:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.container-third {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    gap: 30px;
+}
+
+.dot {
+    background-color: #111;
+    width: 10px;
+    height: 10px;
+    border-radius: 10rem;
+}
+
+.dot:hover {
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid red;
 }
