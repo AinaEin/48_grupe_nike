@@ -63,7 +63,7 @@ body {
     top: 44%; left: -15%;
 }
 
-.colum-right .arrow-one:hover {
+.colum-left .arrow-one:hover {
     color: #111;
 }
 
@@ -125,6 +125,7 @@ body {
     justify-content: center;
     height: 50px;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
 .dot {
