@@ -124,7 +124,7 @@ body {
     display: flex;
     justify-content: center;
     height: 50px;
-    gap: 30px;
+    gap: 40px;
 }
 
 .dot {
@@ -134,10 +134,22 @@ body {
     border-radius: 10rem;
 }
 
-.dot:hover {
-    height: 5px;
-    width: 5px;
-    background-color: red;
-    border-radius: 50%;
-    border: 1px solid red;
+.container-third .dot {
+  width: 8px;
+  height: 8px;
+  margin: 25px 0 25px 0;
+  background-color: #111;
+  -webkit-border-radius: 50px;
+  /* Safari, Chrome */
+  -moz-border-radius: 50px;
+  /* Firefox */
+  border-radius: 50px;
+  /* CSS3 */
+  
+  transition: all .2s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #111;
+}
+
+.container-third .dot:hover {
+  box-shadow: 0 0 0 6px #fff, 0 0 0 7px #111;
 }
